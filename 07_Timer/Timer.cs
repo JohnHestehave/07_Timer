@@ -15,5 +15,11 @@ namespace _07_Timer
 			TimeSpan t = TimeSpan.FromSeconds(Seconds);
 			return string.Format("{0:D2}:{1:D2}:{2:D2}", t.Hours, t.Minutes, t.Seconds);
 		}
+
+		public string Padded(int time)
+		{
+			TimeSpan t = TimeSpan.FromSeconds(time);
+			return string.Format("{0:D2}", t.Seconds);
+		}
 	}
 }
